@@ -63,16 +63,31 @@ header{
 
 /*Portada*/
 
-.container-cover{
+.container-cover {
     width: 100%;
     height: 500px;
     position: relative;
-    margin-top : 80px;
-    background-image: url(foto1.png);
+    margin-top: 80px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    animation: changeBackground 45s infinite  ease-in-out;
 }
+
+
+
+@keyframes changeBackground {
+    0%, 100% {
+        background-image: url(foto2.png);
+    }
+    33.33% {
+        background-image: url(foto3.png);
+    }
+    66.66% {
+        background-image: url(foto1.png);
+    }
+}
+
 
 .container-info-cover{
     max-width: 800px;
