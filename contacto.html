@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link href="estilo.css" rel=" stylesheet" type="text/css">
-    <script src="script.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript" async></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Residencia Camacho</title>
@@ -39,12 +39,22 @@
     </div>
 
 <!--Contenido-->
-    <div class="container-content">
-       <form>
-        <button>ok</button>
-
-       </form>
-
+    <div class="formulario">
+        <h2>Completa este formulario</h2>
+        <form class="form-container" action="https://www.ejemplo.com/procesar-formulario" method="post" onsubmit="return enviarFormulario()">
+            <label class="form-label" for="nombre">Nombre:</label>
+            <input class="form-input" type="text" id="nombre" name="nombre" required><br>
+            
+            <label class="form-label" for="email">Correo Electrónico:</label>
+            <input class="form-input" type="email" id="email" name="email" required><br>
+            
+            <label class="form-label" for="mensaje">Mensaje:</label>
+            <textarea class="form-input" id="mensaje" name="mensaje" rows="4" required></textarea><br>
+            
+            <input id="btnenviar" class="form-button" type="submit" value="Enviar">
+            
+            <p class="form-note">* Todos los campos son obligatorios.</p>
+        </form>
     </div>
 
     </main>
@@ -60,5 +70,12 @@
 
     </footer>
     </div>  
+    <script>
+        function enviarFormulario() {
+            // Coloca aquí el código que deseas ejecutar cuando se envía el formulario
+            alert("Formulario enviado correctamente, pronto recibirá una respuesta");
+            return true; // Permite que el formulario se envíe
+        }
+    </script>
 </body>
 </html>
