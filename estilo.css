@@ -56,9 +56,8 @@ header{
     justify-content: center;
     align-items: center;
 }
-.menu nav ul li a:hover{
-    color: #46a2fd;
-
+.menu nav ul li a {
+    color: black;
 }
 
 /*Portada*/
