@@ -367,11 +367,39 @@ a {
         max-width: 100%;
         height: auto;
     }
-    /* Footer */
-    .container-footer {
-        padding: 5px 0;
+    @keyframes changeBackground {
+        0%, 100% {
+            background-image: url();
+        }
+        33.33% {
+            background-image: url();
+        }
+        66.66% {
+            background-image: url();
+        }
     }
-    .container-footer footer {
-        text-align: center;
+    .container-cover {
+        height: 150px; /* Ajusta la altura de la portada para dispositivos móviles */
+      }
+      .container-info-cover h1 {
+        font-size: 20px; /* Ajusta el tamaño del título en la portada para dispositivos móviles */
+      }
+      .container-info-cover p {
+        font-size: 14px; /* Ajusta el tamaño del texto en la portada para dispositivos móviles */
+      }
+      .container-content {
+        padding: 0 10px; /* Agrega un poco de espacio alrededor del contenido */
+      }
+      .content-group {
+        margin-bottom: 20px; /* Agrega espacio entre los grupos de contenido */
+      }
+      .title-text-container h1 {
+        font-size: 20px; /* Ajusta el tamaño del título */
+      }
+      .title-text-container p {
+        font-size: 14px; /* Ajusta el tamaño del texto */
+      }
+      .map-container {
+        margin-top: 10px; /* Ajusta el margen superior del mapa */
+      }
     }
-}
