@@ -1,7 +1,8 @@
 /*all*/
 
 body{
-background-image: url(cielo.jpg);
+/*background-image: url(cielo.jpg);*/
+background-color: #E3FFF8;
 }
 *{
     background-color: sk;
